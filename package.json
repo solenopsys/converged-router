@@ -1,0 +1,29 @@
+{
+  "name": "@solenopsys/converged-router",
+  "description": "Universal router for Converged",
+  "version": "0.2.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4",
+    "@solenopsys/converged-reactive": "^1.0.7",
+    "@solenopsys/converged-renderer": "^1.0.4"
+  },
+  "peerDependencies": {
+    "@solenopsys/converged-reactive": "*",
+    "@solenopsys/converged-renderer": "*"
+  },
+  "packageManager": "pnpm@7.14.0",
+  "dependencies": {
+  
+  }
+}
