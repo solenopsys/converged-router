@@ -1,5 +1,4 @@
 import {
-	
 	createContext,
 	useContext,
 	useMemo,
@@ -11,7 +10,7 @@ import {
 	useResolved,
 } from "@solenopsys/converged-renderer";
 
-import $  from "@solenopsys/converged-reactive";
+import $ from "@solenopsys/converged-reactive";
 import { normalizeIntegration } from "integration";
 import {
 	createMemoObject,

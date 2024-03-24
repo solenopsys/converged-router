@@ -1,11 +1,9 @@
 import {
 	Observable,
 	ObservableReadonly,
-	useMemo
+	useMemo,
 } from "@solenopsys/converged-renderer";
-import {
-	untrack
-} from "@solenopsys/converged-reactive";
+import { untrack } from "@solenopsys/converged-reactive";
 import type { Params, PathMatch, Route, SetParams } from "types";
 
 const hasSchemeRegex = /^(?:[a-z0-9]+:)?\/\//i;
