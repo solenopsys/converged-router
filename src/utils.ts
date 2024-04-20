@@ -7,7 +7,7 @@ import { untrack } from "@solenopsys/converged-reactive";
 import type { Params, PathMatch, Route, SetParams } from "types";
 
 const hasSchemeRegex = /^(?:[a-z0-9]+:)?\/\//i;
-const trimPathRegex = /^\/+|\/+$/g;
+const trimPathRegex = /^\/+/g;
 
 function normalize(path: string, omitSlash = false) {
 	const s = path.replace(trimPathRegex, "");
