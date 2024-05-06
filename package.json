@@ -1,7 +1,7 @@
 {
 	"name": "@solenopsys/converged-router",
 	"description": "Universal router for Converged",
-	"version": "0.2.2",
+	"version": "0.2.4",
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -15,7 +15,7 @@
 	"sideEffects": false,
 	"scripts": {
 		"format": "bunx @biomejs/biome format src/*.ts --write",
-		"bundle": "bun build  src/index.ts --format esm --dts  --external @solenopsys/converged-reactive --external @solenopsys/converged-renderer --minify --outfile dist/index.js ",
+		"bundle": "bun build  src/index.ts --format esm --dts  --external @solenopsys/converged-reactive --external @solenopsys/converged-renderer  --outfile dist/index.js ",
 		"bundle-tsup": "tsup src/index.ts --format esm --minify ",
 		"types": "bun dts-bundle-generator --external-imports  @solenopsys/converged-reactive --external-imports  @solenopsys/converged-renderer  --no-check -o dist/index.d.ts src/index.ts",
 		"clean": "rm -rf dist",

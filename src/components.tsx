@@ -48,6 +48,7 @@ export const Router = (props: RouterProps) => {
   const integration = source || pathIntegration();
   const routerState = createRouterContext(integration, base, data, out);
 
+  console.log("INIT ROUTER CONTEXT");
   return (
     <RouterContextObj.Provider value={routerState}>
       {props.children}
